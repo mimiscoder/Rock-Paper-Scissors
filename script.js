@@ -64,17 +64,6 @@ function finallWinner(finallHumanScores, finallComputerScores) {
     }
 }
 
-// Call playRound to play 5 rounds
-function playGame() {
-    for(let i = 0; i < 5; i++) {
-        let humanSelection = getHumanChoice(i + 1);
-        humanSelection = humanSelection.charAt(0).toUpperCase() + humanSelection.slice(1).toLowerCase();
-        const computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection);
-    }
-
-    finallWinner(humanScore, computerScore);
-}
 
 playGame();
 
