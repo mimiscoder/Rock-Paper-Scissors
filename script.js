@@ -24,15 +24,15 @@ function getHumanChoice(roundNumber) {
 // Select the winner or loser and assign the score accordingly in a single round.
 function playRound(humanChoice, computerChoice) {
     if(
-        humanChoice === "Rock" && computerChoice === "Scissors"|
-        humanChoice === "Paper" && computerChoice === "Rock"|
+        humanChoice === "Rock" && computerChoice === "Scissors"||
+        humanChoice === "Paper" && computerChoice === "Rock"||
         humanChoice === "Scissors" && computerChoice === "Paper"
     ) {
         humanScore += 1;
         divElement.textContent = `You win this round! ${humanChoice} beats ${computerChoice}`;
     }else if(
-        humanChoice === "Rock" && computerChoice === "Paper"|
-        humanChoice === "Paper" && computerChoice === "Scissors"|
+        humanChoice === "Rock" && computerChoice === "Paper"||
+        humanChoice === "Paper" && computerChoice === "Scissors"||
         humanChoice === "Scissors" && computerChoice === "Rock"
 
     ) {
