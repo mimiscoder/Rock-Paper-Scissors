@@ -23,22 +23,19 @@ function getHumanChoice(roundNumber) {
 
 // Select the winner or loser and assign the score accordingly in a single round.
 function playRound(humanChoice, computerChoice) {
-    if(humanChoice === "Rock" && computerChoice === "Scissors") {
+    if(
+        humanChoice === "Rock" && computerChoice === "Scissors"|
+        humanChoice === "Paper" && computerChoice === "Rock"|
+        humanChoice === "Scissors" && computerChoice === "Paper"
+    ) {
         humanScore += 1;
         `You win this round! ${humanChoice} beats ${computerChoice}`
-    }else if(humanChoice === "Paper" && computerChoice === "Rock") {
-        humanScore += 1;
-        `You win this round! ${humanChoice} beat ${computerChoice}`
-    }else if(humanChoice === "Scissors" && computerChoice === "Paper") {
-        humanScore += 1;
-        `You win this round! ${humanChoice} beat ${computerChoice}`
-    }else if(humanChoice === "Rock" && computerChoice === "Paper") {
-        computerScore += 1;
-        `You lose this round! ${computerChoice} beat ${humanChoice}`
-    }else if(humanChoice === "Paper" && computerChoice === "Scissors") {
-        computerScore += 1;
-        `You lose this round! ${computerChoice} beat ${humanChoice}`
-    }else if(humanChoice === "Scissors" && computerChoice === "Rock") {
+    }else if(
+        humanChoice === "Rock" && computerChoice === "Paper"|
+        humanChoice === "Paper" && computerChoice === "Scissors"|
+        humanChoice === "Scissors" && computerChoice === "Rock"
+
+    ) {
         computerScore += 1;
         `You lose this round! ${computerChoice} beat ${humanChoice}`
     }else if(humanChoice === computerChoice) {
