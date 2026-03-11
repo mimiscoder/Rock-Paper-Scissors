@@ -64,6 +64,10 @@ function finallWinner(finallHumanScores, finallComputerScores) {
     }
 }
 
+buttons = document.querySelectorAll("button");
+buttons.forEach((btn) => btn.addEventListener("click", () => {
+    alert("WORKING FINE!")
+}))
 
 playGame();
 
