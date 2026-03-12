@@ -5,6 +5,8 @@ const divElement = document.querySelector(".result");
 const userSpan = document.querySelector(".user-score");
 const computerSpan = document.querySelector(".computer-score")
 
+divElement.textContent = userSpan.textContent = computerSpan.textContent = 0;
+
 function getComputerChoice() {
     // Get the random number(0-2)
     let randomNumber = Math.floor(Math.random() * 3);
