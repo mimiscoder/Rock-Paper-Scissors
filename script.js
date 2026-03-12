@@ -86,7 +86,14 @@ buttons.forEach((btn) => btn.addEventListener("click", () => {
         
         divElement.textContent = gameResult;
         humanScore = computerScore = 0;
+
+        setTimeout(() => {
+            alert(gameResult);    
+        }, 0);
     }
+
+
+    
 
     
 
