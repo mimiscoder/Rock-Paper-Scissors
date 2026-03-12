@@ -88,7 +88,8 @@ buttons.forEach((btn) => btn.addEventListener("click", () => {
         humanScore = computerScore = 0;
 
         setTimeout(() => {
-            alert(gameResult);    
+            alert(gameResult);  
+            let playAgain = confirm("Do you want to play again? ");
         }, 0);
     }
 
