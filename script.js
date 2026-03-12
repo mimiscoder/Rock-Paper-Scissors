@@ -74,4 +74,16 @@ buttons.forEach((btn) => btn.addEventListener("click", () => {
     computerSpan.textContent = computerScore;
 
     let gameResult;
+
+    if(humanScore === 5 || computerScore === 5){
+       if(humanScore === 5 && computerScore < 5){
+            gameResult = "You Won! You are the winner.";
+       }else if(humanScore < 5 && computerScore === 5){
+            gameResult = "You Lost! The computer is the winner.";
+       }else{
+            gameResult = "It's a Tie! You and the computer tied.";
+       }
+    }
+
+    
 }))
