@@ -5,7 +5,7 @@ const divElement = document.querySelector(".result");
 const userSpan = document.querySelector(".user-score");
 const computerSpan = document.querySelector(".computer-score")
 
-divElement.textContent = userSpan.textContent = computerSpan.textContent = 0;
+userSpan.textContent = computerSpan.textContent = 0;
 
 function getComputerChoice() {
     // Get the random number(0-2)
@@ -76,7 +76,7 @@ buttons.forEach((btn) => btn.addEventListener("click", () => {
                 window.close();
             }
 
-            divElement.textContent = 0;
+            divElement.textContent = "";
             userSpan.textContent = 0;
             computerSpan.textContent = 0;
         }, 0);
