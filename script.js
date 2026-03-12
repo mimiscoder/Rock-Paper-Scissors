@@ -42,12 +42,10 @@ function playRound(humanChoice, computerChoice) {
     ) {
         computerScore += 1;
         divElement.textContent = `You lose this round! ${computerChoice} beat ${humanChoice}`;
-    }else if(humanChoice === computerChoice) {
+    }else{
         computerScore += 1;
         humanScore += 1;
         divElement.textContent = `It's a tie this round! ${computerChoice} ties with ${humanChoice}`;
-    }else {
-        divElement.textContent = "UNKOWN OPERATION!";
     }
 }
 
