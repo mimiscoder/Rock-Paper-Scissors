@@ -33,4 +33,5 @@ The solution to this problem was to use a function called `setTimeout()`, which 
 ## Learning Experience
 
 - I think I learned better how to use functions more effectively.
-- I learned that DOM manipulations/changes are rendered on the UI only after the entire script finishes executing. Functions - like alert() can pause this rendering, because they block JavaScript execution.
+- I learned that DOM manipulations/changes are rendered on the UI only after the entire script finishes executing. 
+- Functions like alert() can pause this rendering, because they block JavaScript execution.
