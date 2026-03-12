@@ -99,10 +99,4 @@ buttons.forEach((btn) => btn.addEventListener("click", () => {
             computerSpan.textContent = 0;
         }, 0);
     }
-
-
-    
-
-    
-
 }))
