@@ -89,7 +89,7 @@ buttons.forEach((btn) => btn.addEventListener("click", () => {
 
         setTimeout(() => {
             alert(gameResult);  
-            let playAgain = confirm("Do you want to play again?(Selecting cancel will close the window.)");
+            let playAgain = confirm("Do you want to play again?(Selecting cancel will close the window)");
             if(playAgain === false){
                 window.close();
             }
