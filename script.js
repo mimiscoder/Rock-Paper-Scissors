@@ -86,4 +86,6 @@ buttons.forEach((btn) => btn.addEventListener("click", () => {
     }
 
     divElement.textContent = gameResult;
+
+    humanScore = computerScore = 0;
 }))
